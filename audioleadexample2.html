@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<head>
+
+    <script src="https://www.ranoya.com/Assets/JSLibs/Scrollytelling/audiolead.js"></script>
+
+</head>
+<html>
+
+
+<body style="overflow-y: hidden;">
+
+    <div id="meupalco" style="position: fixed; top: 0; left: 0; z-index: 2; width: 100%; height: calc(100% + 40px);">
+    </div>
+
+    <audio id="myVideo" style="position: fixed; bottom: 40px; left: calc(50% - 150px); width: 300px; height: 60px; z-index: 5; outline:
+        none;" controls>
+        <source src="https://www.ranoya.com/Assets/Audio/teste-apagar.mp3" type="audio/mp3">
+        Your browser does not support HTML5 video.
+    </audio>
+
+    <script>
+        addAudioLead('meupalco', 'myVideo', [{
+                'time': 0,
+                'href': 'https://slides.com/ranoya/narrativas-mobile/embed#/capa'
+            },
+            {
+                'time': 15,
+                'href': 'https://slides.com/ranoya/narrativas-mobile/embed#/programa'
+            },
+            {
+                'time': 25,
+                'href': 'https://slides.com/ranoya/narrativas-mobile/embed#/universos'
+            },
+            {
+                'time': 35,
+                'href': 'https://slides.com/ranoya/narrativas-mobile/embed#/5'
+            }
+        ]);
+    </script>
+
+</body>
+
+</html>
